@@ -25,5 +25,5 @@ class SchoolStudents:
 
     # TODO Task1.2:implement a function get student with name
     def fetch_data_with_student_name(self):
-        for each_student in self.enrolled_students:
-            return each_student.name
+        # for each_student in self.enrolled_students:
+            return get.name
