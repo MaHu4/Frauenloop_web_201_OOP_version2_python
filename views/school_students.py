@@ -1,5 +1,8 @@
 
 # This class is used to store/maintain the collection of students in the school.
+from webbrowser import get
+
+
 class SchoolStudents:
 
     # constructor for the class
@@ -18,8 +21,9 @@ class SchoolStudents:
             
     # TODO Task1.1:implement a func to get all students' data
     def fetch_all_student_data(self):
-        pass
+       return self.enrolled_students
 
     # TODO Task1.2:implement a function get student with name
     def fetch_data_with_student_name(self):
-        pass
+        for each_student in self.enrolled_students:
+            return each_student.name
