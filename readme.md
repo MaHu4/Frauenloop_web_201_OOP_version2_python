@@ -52,9 +52,9 @@
 
 # TO-DOs:
     Task1:
-        - 1.1 write tests for enroll_students()
-        - 1.2 in student_collection fetch_all_student_data() (test)
-        - 1.3 fetch_data_with_student_name() (test)
+        - 1.0 write tests for enroll_students()
+        - 1.1 in student_collection fetch_all_student_data() (test)
+        - 1.2 fetch_data_with_student_name() (test)
     Task2:
         - 2.1 make one more type of teacher
         - 2.2 collection for teachers and enroll teachers

@@ -2,16 +2,17 @@ from os import sched_get_priority_max
 from views.school_students import SchoolStudents
 from models.student import Student
  
-class TestSchoolStudents:
+class TestSchoolStudents: 
  
-    # #TODO Task1.0: write test
+    # TODO Task1.0: write test
     # def test_enroll_student(self):
         
-    #     schoolStudents = SchoolStudents()
+    #     schoolStudents = SchoolStudents()   #?? What's the difference between SchoolStudents (in views) and Student (in models)??
+    #     # schoolStudents = newly created object; SchoolStudents() = class
     #     print(type(schoolStudents))
 
     #     #  variable of type Student
-    #     firstStudentInClass = Student(name="Maria", age=20, class_number=5)
+    #     firstStudentInClass = Student(name="Maria", age=20, class_number=5)  # ??? Is student here now the child or parent class of TestSchoolStudents???
     #     secondStudentInClass = Student(name="Jyotsna", age=20, class_number=5)
     #     thirdStudentInClass = Student(name="Theresa", age=19, class_number=5)
     #     fourthStudentInClass = Student(name="Ayumi", age=19, class_number=5)
@@ -22,7 +23,7 @@ class TestSchoolStudents:
     #     print(firstStudentInClass) # ?? How can I print the list of all enrolled students??
         
     #     # method to test
-    #     schoolStudents.enroll_student(firstStudentInClass) 
+    #     schoolStudents.enroll_student(firstStudentInClass)  #enrol_student is method from class SchooStudents 
     #     schoolStudents.enroll_student(secondStudentInClass)
     #     schoolStudents.enroll_student(thirdStudentInClass)
     #     schoolStudents.enroll_student(fourthStudentInClass)
@@ -67,31 +68,33 @@ class TestSchoolStudents:
 
     # TODO Task1.2: write test for fetch_data_with_student_name()
 
-    def fetch_data_with_student_name(self):
+    # def test_fetch_data_with_student_name(self):
 
-        # test-setup
-        schoolStudents = SchoolStudents() 
+    #     # test-setup
+    #     schoolStudents = SchoolStudents() 
 
-        #variable of type Student
-        firstStudentInClass = Student(name="Maria", age=20, class_number=5)
-        secondStudentInClass = Student(name="Jyotsna", age=20, class_number=5)
-        thirdStudentInClass = Student(name="Theresa", age=19, class_number=5)
-        fourthStudentInClass = Student(name="Ayumi", age=19, class_number=5)
-        fifthStudentInClass = Student(name="Nicole", age=21, class_number=5)
-        sixthStudentInClass = Student(name="Ashgan", age=19, class_number=5)
-        seventhStudentInClass = Student(name="Maren", age= 21, class_number=5)  
+    #     #variable of type Student
+    #     firstStudentInClass = Student(name="Maria", age=20, class_number=5) # name, age and class are parameters defined in parent class
+    #     secondStudentInClass = Student(name="Jyotsna", age=20, class_number=5)
+    #     thirdStudentInClass = Student(name="Theresa", age=19, class_number=5)
+    #     fourthStudentInClass = Student(name="Ayumi", age=19, class_number=5)
+    #     fifthStudentInClass = Student(name="Nicole", age=21, class_number=5)
+    #     sixthStudentInClass = Student(name="Ashgan", age=19, class_number=5)
+    #     seventhStudentInClass = Student(name="Maren", age= 21, class_number=5)  
 
 
-        # enroll a student
-        schoolStudents.enroll_student(firstStudentInClass)
-        schoolStudents.enroll_student(secondStudentInClass)
-        schoolStudents.enroll_student(thirdStudentInClass)
-        schoolStudents.enroll_student(fourthStudentInClass)
-        schoolStudents.enroll_student(fifthStudentInClass)
-        schoolStudents.enroll_student(sixthStudentInClass)
-        schoolStudents.enroll_student(seventhStudentInClass)
+    #     # enroll a student
+    #     schoolStudents.enroll_student(firstStudentInClass) 
+    #     schoolStudents.enroll_student(secondStudentInClass)
+    #     schoolStudents.enroll_student(thirdStudentInClass)
+    #     schoolStudents.enroll_student(fourthStudentInClass)
+    #     schoolStudents.enroll_student(fifthStudentInClass)
+    #     schoolStudents.enroll_student(sixthStudentInClass)
+    #     schoolStudents.enroll_student(seventhStudentInClass)
 
-        # method to test
-        data_with_student_name = schoolStudents.fetch_data_with_student_name()
+    #     # method to test
+    #     data_with_student_name = schoolStudents.fetch_data_with_student_name() #?? What#s the difference to Task1.1???
 
-        assert data_with_student_name == [firstStudentInClass, secondStudentInClass, thirdStudentInClass, fourthStudentInClass, fifthStudentInClass, sixthStudentInClass, seventhStudentInClass]
+    #     assert data_with_student_name == [firstStudentInClass, secondStudentInClass, thirdStudentInClass, fourthStudentInClass, fifthStudentInClass, sixthStudentInClass, seventhStudentInClass]
+
+       

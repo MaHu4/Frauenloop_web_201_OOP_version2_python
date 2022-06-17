@@ -16,7 +16,7 @@ class SchoolStudents:
     
     #  func to print out the details of all enrolled students
     def all_students(self):
-        for each_student in self.enrolled_students:
+        for each_student in self.enrolled_students:  # where is each_student variable defined?
             print("Name :" + each_student.name)
             
     # TODO Task1.1:implement a func to get all students' data
@@ -25,5 +25,4 @@ class SchoolStudents:
 
     # TODO Task1.2:implement a function get student with name
     def fetch_data_with_student_name(self):
-        # for each_student in self.enrolled_students:
-            return get.name
+        return self.enrolled_students
