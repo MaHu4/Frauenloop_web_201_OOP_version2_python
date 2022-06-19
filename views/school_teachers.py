@@ -4,22 +4,22 @@ class SchoolTeachers:
 
     # constructor for the class; initilizes the class variable enrolled_teachers to an empty list
     def __init__(self):
-        self.registered_teachers = []
+        self.enrolled_teachers = []
 
     # func to add a teacher to the list of enrolled teachers
     def register_teacher(self, teacher):
-        self.registered_teachers.append(teacher)
+        self.enrolled_teachers.append(teacher)
         
     
     #  func to print out the details of all enrolled teachers
     def all_teachers(self):
-        for each_teacher in self.registered_teachers:
+        for each_teacher in self.enrolled_teachers:
             print ("Name :" + each_teacher.name)
             
     # TODO Task2.3: implement a func to get all teachers' data
     def fetch_all_teacher_data(self):
-        return self.registered_teachers
+        return self.enrolled_teachers
 
     # TODO Task2.4: implement a function get teacher with name
     def fetch_data_with_teacher_name(self):
-        return self.registered_teachers
+        return self.enrolled_teachers

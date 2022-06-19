@@ -5,7 +5,7 @@ from models.teacher import SchoolTeacher
 class TestSchoolStudents: 
 
 # Test to register school teachers
-    def test_register_teacher(self):
+    def test_enroll_teacher(self):
 
         schoolTeachers = SchoolTeachers()
 
@@ -13,7 +13,7 @@ class TestSchoolStudents:
         firstTeacherofSchool = SchoolTeacher(name = "Hille", age="52", subject1 = "Maths", subject2= "English")
 
  # method to test
-        schoolTeachers.register_teacher(firstTeacherofSchool) 
+        schoolTeachers.enroll_teacher (firstTeacherofSchool) 
 
-        assert schoolTeachers.registered_teachers == [firstTeacherofSchool]
+        assert schoolTeachers.enrolled_teachers == [firstTeacherofSchool]
 
