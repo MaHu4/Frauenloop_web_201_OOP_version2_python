@@ -4,15 +4,16 @@ from models.student import Student
  
 class TestSchoolStudents: 
  
-    # TODO Task1.0: write test
-    # def test_enroll_student(self):
+    #TODO Task1.0: write test
+    def test_enroll_student(self):
         
-    #     schoolStudents = SchoolStudents()   #?? What's the difference between SchoolStudents (in views) and Student (in models)??
-    #     # schoolStudents = newly created object; SchoolStudents() = class
-    #     print(type(schoolStudents))
+        schoolStudents = SchoolStudents()   #?? What's the difference between SchoolStudents (in views) and Student (in models)??
+        # schoolStudents = newly created object; SchoolStudents() = class
+        print(type(schoolStudents))
+    
 
     #     #  variable of type Student
-    #     firstStudentInClass = Student(name="Maria", age=20, class_number=5)  # ??? Is student here now the child or parent class of TestSchoolStudents???
+    #     firstStudentInClass = Student(name="Maria", age=20, class_number=5)  # TestSchoolStudent is NOT a child class of Student
     #     secondStudentInClass = Student(name="Jyotsna", age=20, class_number=5)
     #     thirdStudentInClass = Student(name="Theresa", age=19, class_number=5)
     #     fourthStudentInClass = Student(name="Ayumi", age=19, class_number=5)

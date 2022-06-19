@@ -1,3 +1,5 @@
+# it represents the data and functionality for a student from the real world. Each instance of that class (every time I do var = Student()) will be for one particular student that exists at some given time.
+
 class Student:
 
     # class parametrized contructor: 

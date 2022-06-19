@@ -1,12 +1,13 @@
 
 # This class is used to store/maintain the collection of students in the school.
+  #SchooStudents is a class to represent / to wrap a list of students, e.g. to pass lists of students and return them to the user. That is why this is within the views package
+
 from webbrowser import get
 
 
 class SchoolStudents:
 
-    # constructor for the class
-    # initilizes the class variable enroll_students to an empty list
+    # constructor for the class; initilizes the class variable enroll_students to an empty list
     def __init__(self):
         self.enrolled_students = []
 
